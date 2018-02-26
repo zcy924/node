@@ -25,8 +25,8 @@ router.get('/system/user', function (req, res) {
             res.json({retList: doc, pageSize: pageSize, curPage: curPage, totalRow: totalRow});
         }
     });
-
 });
+
 router.post('/system/user', function (req, res) {
     const u = new user({
         userId: req.body.userId,
